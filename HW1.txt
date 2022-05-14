@@ -1,0 +1,204 @@
+HW_1. The first part
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я --- pwd	
+
+2) Создать папку  ---  mkdir foldername 
+
+3) Зайти в папку  --- cd foldername 
+
+4) Создать 3 папки --- mkdir  foldername1 ; mkdir  foldername2 ; mkdir foldername3
+
+5) Зайти в любоую папку --- cd foldername2
+
+6) Создать 5 файлов (3 txt, 2 json)
+
+touch  1.txt ; touch  2.txt ; touch  3.txt ; touch  1.json ; touch  2.json
+
+7) Создать 3 папки
+
+mkdir 1folder ; mkdir 2folder ; mkdir 3folder
+
+8. Вывести список содержимого папки
+ls -la
+
+9) + Открыть любой txt файл
+10) + написать туда что-нибудь, любой текст.
+11) + сохранить и выйти.
+
+start 1.txt - откроет в GUI 
+cat > 1.txt - откроет в режиме редактирования файл 
+ctrl + D - закрыть файл 
+  
+12) Выйти из папки на уровень выше
+cd .. 
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv f3/1.txt f2/1.txt - перемещает 1 файл 
+mv f3/1.txt f2/1.txt ; mv f3/2.txt f2/1.txt через точку с запятой 2 файла
+mv f3/*.json f2
+переместит все файлы с указанным расширением ( подходит по условию задачи ) 
+
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp f2/1.txt f3/1.txt ; mv f2/2.txt f3/1.txt 
+
+15) Найти файл по имени
+find -name 1.txt
+
+Ответ 
+./f2/1.txt
+
+О команде https://losst.ru/komanda-find-v-linux
+
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+
+tail -f f2/1.txt 
+ просмотр в реальном времени 
+
+tail -f f2/1.txt | grep KOT
+ отдаст инфо когда появится в файле слово KOT
+ctrl + c 
+
+как работает 
+https://wiki.merionet.ru/servernye-resheniya/39/rukovodstvo-po-komande-grep-v-linux/
+
+
+17) вывести несколько первых строк из текстового файла
+несколько = 3
+тогда 
+head -n3 f2/1.txt
+
+18) вывести несколько последних строк из текстового файла
+несколько = 3 
+тогда 
+tail -n3 f2/1.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less 1.txt
+
+q - выход 
+https://andreyex.ru/linux/3-sposoba-prosmotra-zhurnalov-v-realnom-vremeni-v-linux/
+
+HW_1. The first part
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я --- pwd	
+
+2) Создать папку  ---  mkdir foldername 
+
+3) Зайти в папку  --- cd foldername 
+
+4) Создать 3 папки --- mkdir  foldername1 ; mkdir  foldername2 ; mkdir foldername3
+
+5) Зайти в любоую папку --- cd foldername2
+
+6) Создать 5 файлов (3 txt, 2 json)
+
+touch  1.txt ; touch  2.txt ; touch  3.txt ; touch  1.json ; touch  2.json
+
+7) Создать 3 папки
+
+mkdir 1folder ; mkdir 2folder ; mkdir 3folder
+
+8. Вывести список содержимого папки
+ls -la
+
+9) + Открыть любой txt файл
+10) + написать туда что-нибудь, любой текст.
+11) + сохранить и выйти.
+
+start 1.txt - откроет в GUI 
+cat > 1.txt - откроет в режиме редактирования файл 
+ctrl + D - закрыть файл 
+  
+12) Выйти из папки на уровень выше
+cd .. 
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv f3/1.txt f2/1.txt - перемещает 1 файл 
+mv f3/1.txt f2/1.txt ; mv f3/2.txt f2/1.txt через точку с запятой 2 файла
+mv f3/*.json f2
+переместит все файлы с указанным расширением ( подходит по условию задачи ) 
+
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp f2/1.txt f3/1.txt ; mv f2/2.txt f3/1.txt 
+
+15) Найти файл по имени
+find -name 1.txt
+
+Ответ 
+./f2/1.txt
+
+О команде https://losst.ru/komanda-find-v-linux
+
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+
+tail -f f2/1.txt 
+ просмотр в реальном времени 
+
+tail -f f2/1.txt | grep KOT
+ отдаст инфо когда появится в файле слово KOT
+ctrl + c 
+
+как работает 
+https://wiki.merionet.ru/servernye-resheniya/39/rukovodstvo-po-komande-grep-v-linux/
+
+
+17) вывести несколько первых строк из текстового файла
+несколько = 3
+тогда 
+head -n3 f2/1.txt
+
+18) вывести несколько последних строк из текстового файла
+несколько = 3 
+тогда 
+tail -n3 f2/1.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less 1.txt
+
+q - выход 
+https://andreyex.ru/linux/3-sposoba-prosmotra-zhurnalov-v-realnom-vremeni-v-linux/
+
+20) вывести дату и время --- date
+
+21) посмотреть погоду --- curl wttr.in
+
+=========
+
+Задание *
+
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+ 
+curl "http://162.55.220.72:5005/terminal-hw-request"
+{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1"
+:"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_
+your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+
+curl "http://162.55.220.72:5005/get_method?name=MikitaUZ&age=96"
+["MikitaUZ","96"]
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+nano srupt.sh
+
+#!/bin/bash
+echo "щас как запустим"
+echo  "МОСКОВСКОЕ ВРЕМЯ :"
+date
+ cd /c/Users/Ann/desktop/homework
+mkdir scrptfin
+cd scrptfin
+mkdir  d1 ; mkdir  d2 ; mkdir d3
+cd d2
+touch  1.txt ; touch  2.txt ; touch  3.txt ; touch  1.json ; touch  2.json
+mkdir 1folder ; mkdir 2folder ; mkdir 3folder
+ls -la
+mv 1.txt 1folder/ ; mv 2.txt 1folder/
+echo "вот и все.... что остааааанется... после меня"
+ls -la
+echo "пропали файлы? все гуд?"
